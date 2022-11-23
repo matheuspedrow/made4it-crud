@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+	<title>Document</title>
+</head>
+<body>
+	<header>
+		<img src="./images/logo.png" alt="" class="made4it-logo">
+		<h1 class="client-manager-text">Gestão de Clientes</h1>
+		<img src="./images/logo.png" alt="" class="made4it-logo">
+	</header>
+	<section class="client-manager">
+		<h2>Clientes</h2>
+		<div class="client-manager-container">
+			<select class="form-select client-list" size="3" aria-label="size 3 select example"></select>
+			<div class="button-section">
+				<img src="./images/edit.svg" class="edit-button" alt="">
+				<img src="./images/delete.svg" class="delete-button" alt="">
+			</div>
+		</div>
+	</section>
+	<section class="client-infos">
+		<h1 class="client-edit-text">Editar cliente</h1>
+		<section class="client-inputs">
+			<div class="mb-3">
+				<label for="name-input" class="form-label">Nome</label>
+				<input type="text" class="form-control text-inputs" id="name-input">
+			</div>
+			<div class="mb-3">
+				<label for="phone-input" class="form-label">Telefone</label>
+				<input type="tel" maxlength="11" class="form-control text-inputs" id="phone-input">
+			</div>
+			<div class="mb-3">
+				<label for="age-input" class="form-label">Idade</label>
+				<input type="number" class="form-control text-inputs" id="age-input">
+			</div>
+			<div class="input-group mb-3 gender-input">
+				<label class="input-group-text" for="gender-input">Gênero</label>
+				<select class="form-select" id="gender-input">
+					<option id ="Masculino" value="male">Masculino</option>
+					<option id ="Feminino" value="female">Feminino</option>
+					</select>
+			</div>
+		</section>
+		<button type="button" class="btn btn-primary save-input">Salvar</button>
+	</section>
+	<script type ="module" src="./src/main.js"></script>
+</body>
+</html>
